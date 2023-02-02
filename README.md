@@ -11,7 +11,7 @@ This project is heavily inspired by  [markmap](https://github.com/markmap/markma
 ### Installation
 
 ```
-pip install streamlit-markmap
+pip install streamlit-markmap==1.0.1
 ```
 
 ### Example
