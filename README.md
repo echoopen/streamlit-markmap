@@ -16,6 +16,26 @@ pip install streamlit-markmap==1.0.1
 
 ### Example
 
+##### 1、a simple case
+
+![image-20230203094637582](https://cdn.jsdelivr.net/gh/echoopen/echoimage/img/image-20230203094637582.png)
+
+```python
+import streamlit as st
+from streamlit_markmap import markmap
+
+st.set_page_config(page_title="markmap", layout="wide")
+
+with open('markdown_data/data.md', encoding='utf-8') as fp:
+    md = fp.read()
+
+markmap(md,height=400)
+```
+
+---
+
+##### 2、a complex case
+
 这个例子参考了[markmap](https://markmap.js.org/repl)网站案例，同时因不知使用markmap项目是否需要声明，如需可随时增加相关声明。
 
 This example is a reference to the [markmap](https://markmap.js.org/repl) website, and as it is not known whether a declaration is required to use the markmap project, feel free to add one if you wish.

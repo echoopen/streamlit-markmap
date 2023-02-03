@@ -3,6 +3,15 @@ from streamlit_markmap import markmap
 
 st.set_page_config(page_title="markmap", layout="wide")
 
+
+
+st.write('## example1')
+with open('markdown_data/data.md', encoding='utf-8') as fp:
+    md = fp.read()
+
+markmap(md,height=400)
+
+st.write('## example2')
 data = '''
 ---
 markmap:
@@ -40,3 +49,6 @@ markmap:
 '''
 
 markmap(data, height=400)
+
+
+
